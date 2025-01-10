@@ -10,4 +10,6 @@ permalink: /docs/h1a
 Hello 
 # H1a
 
-maker pura
+maker {% cite doe2021%} pura
+
+{% bibliography --cited %}
