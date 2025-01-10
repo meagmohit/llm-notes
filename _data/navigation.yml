@@ -2,11 +2,32 @@
 main:
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+
+# docs:
+#   - title: Heading 1
+#     children:
+#     - title: "Heading 1a"
+#       url: /docs/h1a
+  #   - title: "Heading 1b"
+  #     url: /docs/h1b
+
+  # - title: Heading 2
+  #   children:
+  #   - title: "Heading 2a"
+  #     url: /docs/h2a
+  #   - title: "Heading 2b"
+  #     url: /docs/h2b
+
+    
+  
+docs2:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+      - title: "Structure"
+        url: /docs/structure/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/
