@@ -2,8 +2,8 @@
 layout: single
 title: About
 permalink: /docs/h1a
-# sidebar:
-#   nav: "docs2"
+# tags:
+#   - XY
 ---
 
 

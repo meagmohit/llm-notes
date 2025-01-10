@@ -17,17 +17,15 @@ main:
   #     url: /docs/h2a
   #   - title: "Heading 2b"
   #     url: /docs/h2b
-
-    
   
-docs2:
+docs:
   - title: Getting Started
     children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
+      - title: "ha1"
+        url: /docs/h1a/
+      # - title: "Structure"
+      #   url: /docs/structure/
+      # - title: "Installation"
+      #   url: /docs/installation/
+      # - title: "Upgrading"
+      #   url: /docs/upgrading/

@@ -272,7 +272,7 @@ whitelist:
   - jekyll-include-cache
 
 scholar:
-  style: ieee
+  style: current-opinion
 
 
 # Archives
@@ -326,4 +326,4 @@ defaults:
       share: false
       related: true
       sidebar: 
-        nav: "docs2"
+        nav: "docs"
