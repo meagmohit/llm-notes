@@ -1,31 +1,64 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-
-# docs:
-#   - title: Heading 1
-#     children:
-#     - title: "Heading 1a"
-#       url: /docs/h1a
-  #   - title: "Heading 1b"
-  #     url: /docs/h1b
-
-  # - title: Heading 2
-  #   children:
-  #   - title: "Heading 2a"
-  #     url: /docs/h2a
-  #   - title: "Heading 2b"
-  #     url: /docs/h2b
+  # - title: "Home"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   
 docs:
-  - title: Getting Started
+  - title: Core
     children:
-      - title: "ha1"
-        url: /docs/h1a/
-      # - title: "Structure"
-      #   url: /docs/structure/
-      # - title: "Installation"
-      #   url: /docs/installation/
-      # - title: "Upgrading"
-      #   url: /docs/upgrading/
+      - title: "Transformers"
+        url: /docs/transformers/
+      - title: "Positional Encodings"
+        url: /docs/positional-encodings
+      - title: "Tokenization"
+        url: /docs/tokenization
+      - title: "Decoding Strategies"
+        url: /docs/decoding-strategies
+      - title: "KV Cache"
+        url: /docs/kv-cache
+      - title: "Vision Transformers"
+        url: /docs/vision-transformers
+      - title: "Advances in Transformers"
+        url: /docs/advances-in-transformers
+      - title: "Diffusion"
+        url: /docs/diffusion
+  - title: Models & Architectures
+    children:
+      - title: "LM Overview"
+        url: /docs/lm-overview/
+      - title: "Large Language Models"
+        url: /docs/large-language-models/
+      - title: "Large Multimodal Models"
+        url: /docs/large-multimodal-models/
+  - title: Training
+    children:
+      - title: "Training Overview"
+        url: /docs/training-overview/
+      - title: "Pre-Training"
+        url: /docs/pre-training/
+      - title: "SFT"
+        url: /docs/sft/
+      - title: "Alignment/RLHF"
+        url: /docs/alignment-rlhf/
+      - title: "PET Methods"
+        url: /docs/pet-methods/
+      - title: "Scaling Laws"
+        url: /docs/scaling-laws
+      - title: "Emerging Methods"
+        url: /docs/training-emerging-methods/
+  - title: Evaluation
+    children:
+      - title: "Metrics"
+        url: /docs/evaluation-metrics/
+      - title: "Tools & Datasets"
+        url: /docs/tools-and-datasets/
+  - title: Advanced Topics
+    children:
+      - title: "RAG"
+        url: /docs/rag/
+      - title: "Agents"
+        url: /docs/agents/
+
+
+
+
