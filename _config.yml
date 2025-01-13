@@ -272,7 +272,7 @@ whitelist:
   - jekyll-include-cache
 
 scholar:
-  style: current-opinion
+  style: apa #current-opinion, apa, ieee
 
 
 # Archives
