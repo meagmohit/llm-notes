@@ -153,6 +153,112 @@ Fig. A schematic comparison of BART with BERT {%cite devlin2019bertpretrainingde
 * more beneficial to only share the embeddings between generator & discriminator while using a small generator (1/4 to 1/2 the discriminator size), rather than sharing all the weights (i.e. two models have to be the same size then)
 * joint training of the generator and discriminator works better than two-stage training of each alternatively
 
+## Recent Models
+
+### Phi-Models
+
+phi-1 {%cite gunasekar2023textbooksneed%} (1.3B parameters), phi-1.5 {%cite li2023textbooksneediiphi15%} (1.3B parameters), and phi-2 (2.7B parameters)
+
+### Bloomberg-GPT
+{%cite wu2023bloomberggptlargelanguagemodel%} 50-billion parameter language model for finance, trained on 363 billion tokens from finance data and 345 billion tokens from a general, publicly available dataset. For comparison, GPT-3 is 3.5x larger (175 billion parameters) but was trained on 1.4x fewer tokens (499 billion).
+Why did the authors use an architecture with "only" 50 billion parameters since GPT-3 is 3.5x larger? That's easier to answer. They adopted the Chinchilla scaling laws and found this to be a good size given the available size of the finance data.
+AdaptLLM-7B (Small) model outperforms BloombergGPT on one dataset and nearly matches its performance on three other finance datasets. Although BloombergGPT appears to be slightly better overall, it's worth noting that training AdaptLLM-7B cost about $100, in contrast to BloombergGPT's multi-million dollar investment.
+
+
+### Llama Series
+
+#### Llama 2
+* 7B to 70B parameters
+* Chat model versions are finetuned with RLHF using two separate reward models, rejection sampling and PPO
+* Architecture: Group-query attention 
+
+#### Llama 3
+* 405B model, and updated the previous 8B and 70B models
+* Uses group-query attention
+* Didn’t use sliding attention window, and MoE approaches
+* Supports 8 languages
+* Employs heuristic-based filtering alongside model-based quality filtering, utilizing fast classifiers like Meta AI's fastText and RoBERTa-based classifiers. These classifiers also help in determining the context categories for the data mix used during training.
+* Pre-training is performed in 3 stages
+  * Standard Initial Pre-training
+    * (4M tokens, 1024 batch size, and 4096 sequence length) => double the sequence length to 8192 after 252M tokens => double the batch size after 2.87T tokens. 
+    * Adjusted the mix of data being used during the training process to optimize model learning and performance
+  *  Continued Pre-training: Extended the context length from 8k to 128k in six distinct stages. Involved 8B tokens.
+    * Annealing on High-Quality Data
+* Post-Training: RLHF/DPO were iteratively repeated
+  *  RM was trained using a checkpoint from the pre-training phase, utilizing human-annotated data. RM was further used for rejection sampling, helping to select appropriate prompts for further training. 
+  * In each training round, model averaging was performed for RM, DPO and SFT
+
+
+### Mistral 7B
+
+{%cite jiang2023mistral7b%}
+
+* Led to the development of Zephyr-7B and Mistral MoE suite of models  
+* Outperforms 13B Llama-2 in various benchmarks.  
+* Why it’s so good is unclear, but most likely due to its training data  
+* Uses sliding window attention for computational efficiency  
+  * Attention size block is 4096 tokens, trained with 100k token context sizes.
+
+### Qwen 2
+
+{%cite yang2024qwen2technicalreport%} from Alibaba Research
+
+* 4 regular (dense) LLMs w/ 0.5B, 1.5B, 7B and 72B  
+* MoE with 57B where 14B are activated at the same time  
+* Multilingual capability in 30 languages  
+* Focus on improving the data filtering pipeline to remove low-quality data and enhancing data mixing to increase data diversity   
+* Performed training in two stages  
+  * regular pre-training followed by long-context training  
+  * long-context training increases the context length from 4096 to 32768 using high quality lengthy data  
+* RLHF was done in 2 stages, first using DPO on an existing dataset (offline stage). Second, using a reward model to form the preference pair (online). Here, the model generates multiple responses during training, and a reward model selects the preferred response for the optimization step in "real-time" (that is, during training). This is also often referred to as "rejection sampling."
+
+### Apple Intelligence Language Foundational Models (AFM)
+
+{%cite gunter2024appleintelligencefoundationlanguage%}
+
+* 3-billion-parameter on-device model intended for deployment on phones, tablets, or laptops, and a more capable server model of unspecified size.   
+* Both models are dense, no MoE  
+* Pre-training was performed in 3 stages  
+  * Core Pre-Training: AFM-server model was trained on 6.3 trillion tokens, a batch size of 4096 batch size and a 4096-token sequence length. On-device model, which is distilled and pruned from a larger 6.4-billion-parameter model (trained from scratch like the AFM-server model).  
+    * A distillation loss is used by replacing the target labels with a convex combination of the true labels and the teacher model's top-1 predictions (with 0.9 weight assigned to the teacher labels).  
+  * Continued Pre-training: where web-crawl (lower-quality) data was down-weighted; math and code was up-weighted. Includes a small context lengthening step from 4,096 to 8,192 tokens on a dataset consisting of 1 trillion tokens.  
+  * Context-lengthening: 100 billion tokens (10% of the tokens used in the second stage) but represents a more significant context lengthening to 32,768 tokens. To achieve this, the researchers augmented the dataset with synthetic long-context Q\&A data.  
+* Post-Training  
+  * leveraged both human-annotated and synthetic data, they fine-tuned the data mixture through multiple experiments to achieve the optimal balance. Introduced two new algorithms for RLHF: (a) Rejection Sampling Fine-tuning with Teacher Committee (iTeC), (b) RLHF with Mirror Descent Policy Optimization
+
+{: .text-center}
+![knowledge distillation]({{ site.url }}{{ site.baseurl }}/docs/images/llm-knowledge-distillation.jpg)
+Fig. An overview of knowledge distillation, where a small model (here, the AFM-device 3B model) is trained on the original training tokens plus the outputs from a larger teacher model (here, a 6.4B model). Note that the cross entropy loss in a) is the regular training loss used for pre-training LLMs. Credits: From {%cite seb-new-llm-pretraining-posttraining%} 
+
+**Gemma 2**
+
+{%cite gemmateam2024gemma2improvingopen%}
+
+* 2B, 9B and 27B, employs sliding window attention.  
+* argue that even small models are often undertrained. However instead of increasing training dataset size, they maintain high quality, and use knowledge distillation methods.   
+* 27B was trained from scratch, but 2B/9B were trained from knowledge distillation  
+* Alternated between regular attention and sliding window attention layers. The sliding attention block size was 4096 tokens, spanning a total block size of 8192 tokens.  
+* Performed logit capping, essentially a form of min-max normalizing and clipping of the logit values to keep them within a certain range (to improve stability and gradient flow during training). logits ← soft\_cap ∗ tanh(logits/soft\_cap)  
+*   
+* Post Training  
+  * Used a mix of human-generated and synthetic-generated content. responses were primarily generated by teacher models, and knowledge distillation was also applied during the SFT phase.  
+  * The reward model used for RLHF is ten times larger than the policy (target) model.  
+  * Policy Models were averaged using WARP
+
+
+## Comparing Open-Source Models
+
+|  | Token Vocab size | Tokens for Training |
+| :---- | :---- | :---- |
+| Qwen 2 | 151642 | 7T (for 1.5B, 7B, 72B) 12T(for 0.5B) |
+| Llama 2 | 32k | 2T |
+| Llama 3.1 | 128k | 15T |
+| AFM | 49k (device) 100k (server) | 6.3T (server) |
+| Gemma 2 | 256k | 13T (27B) 8T (9B) 2T (2B) |
+| Phi-3 | 32k |  |
+
+Gemma 2 is likely the most capable model for single-GPU use cases today. For larger models, Llama 3 70B and Qwen 2 72B remain strong contenders {%cite seb-instruction-pretraining%}
+{: .notice--info}
 
 ## Reading List
 
@@ -161,6 +267,10 @@ Fig. A schematic comparison of BART with BERT {%cite devlin2019bertpretrainingde
 | --------------------------------------------   | ------------ | ------------------------------------------------------------ |
 | [The Illustrated BERT](https://jalammar.github.io/illustrated-bert/) {% cite alammar-illustratedtbert%}| LMs | Good Short Overview
 | [Generalized Language Models by Lilian Weng](https://lilianweng.github.io/posts/2019-01-31-lm/) {% cite weng2019LM%}| LMs | Great overview of BERT and its successors
+| [Ten Noteworthy AI Research Papers of 2023 by Sebastian Raschka](https://magazine.sebastianraschka.com/p/10-ai-research-papers-2023) {% cite seb-10aipapers2023%}| LMs/Research | Decent samplers of 2023 10 papers
+| [AI and Open Source in 2023](https://magazine.sebastianraschka.com/p/ai-and-open-source-in-2023) {% cite seb-ai-opensource%}| LMs/Research | Decent samplers of 2023 10 papers
+| [New LLM Pre-training and Post-training Paradigms](https://magazine.sebastianraschka.com/p/new-llm-pre-training-and-post-training) {% cite seb-new-llm-pretraining-posttraining%}| LMs/Training/Research | detailed overview of pre-training pipelines
+
 
 ## References
 

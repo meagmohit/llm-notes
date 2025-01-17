@@ -12,20 +12,20 @@ docs:
         url: /docs/positional-encodings
       - title: "Tokenization"
         url: /docs/tokenization
-      - title: "Decoding Strategies"
-        url: /docs/decoding-strategies
+      # - title: "Decoding Strategies"
+      #   url: /docs/decoding-strategies
       - title: "KV Cache"
         url: /docs/kv-cache
       - title: "Vision Transformers"
         url: /docs/vision-transformers
       - title: "Advances in Transformers"
         url: /docs/advances-in-transformers
-      - title: "Diffusion"
-        url: /docs/diffusion
+      # - title: "Diffusion"
+      #   url: /docs/diffusion
   - title: Models & Architectures
     children:
-      - title: "LM Overview"
-        url: /docs/lm-overview/
+      # - title: "LM Overview"
+      #   url: /docs/lm-overview/
       - title: "Large Language Models"
         url: /docs/large-language-models/
       - title: "Large Multimodal Models"
@@ -34,10 +34,10 @@ docs:
     children:
       - title: "Training Overview"
         url: /docs/training-overview/
-      - title: "Pre-Training"
-        url: /docs/pre-training/
-      - title: "SFT"
-        url: /docs/sft/
+      # - title: "Pre-Training"
+      #   url: /docs/pre-training/
+      # - title: "SFT"
+      #   url: /docs/sft/
       - title: "Alignment/RLHF"
         url: /docs/alignment-rlhf/
       - title: "PET Methods"
@@ -45,19 +45,21 @@ docs:
       - title: "Scaling Laws"
         url: /docs/scaling-laws
       - title: "Emerging Methods"
-        url: /docs/training-emerging-methods/
+        url: /docs/emerging-methods/
   - title: Evaluation
     children:
+      - title: "Evaluation Overview"
+        url: /docs/evaluation-overview/
       - title: "Metrics"
         url: /docs/evaluation-metrics/
       - title: "Tools & Datasets"
         url: /docs/tools-and-datasets/
-  - title: Advanced Topics
-    children:
-      - title: "RAG"
-        url: /docs/rag/
-      - title: "Agents"
-        url: /docs/agents/
+  # - title: Advanced Topics
+  #   children:
+  #     - title: "RAG"
+  #       url: /docs/rag/
+  #     - title: "Agents"
+  #       url: /docs/agents/
 
 
 

@@ -248,6 +248,19 @@ evaluation or end-to-end finetuning. Credits: {%cite yu2022cocacontrastivecaptio
 ### GLIDE
 {%cite nichol2022glidephotorealisticimagegeneration%} Diffusion Based
 
+## Others
+
+### Segment Anything Model (SAM)
+
+{%cite kirillov2023segment%} accepts segmentation prompts as points, boxes, masks, text, etc.   
+* An image encoder utilizing a masked autoencoder based on a pretrained vision transformer (ViT) that can handle high-resolution inputs. This encoder is run once per image and can be applied before prompting the model.  
+* A prompt encoder that handles two types of prompts: sparse (points, boxes, text) and dense (masks). Points and boxes are represented by positional encodings combined with learned embeddings for each prompt type. And free-form text uses an off-the-shelf text encoder from CLIP. Dense prompts, i.e., masks, are embedded using convolutions and summed element-wise with the image embedding.  
+* A mask decoder maps the image embedding, prompt embeddings, and an output token to a mask. This is a decoder-style transformer architecture that computes the mask foreground probability at each image location.
+
+{: .text-center}
+![Segment Anything Model]({{ site.url }}{{ site.baseurl }}/docs/images/lmm-segment-anything.jpg)
+Fig. AThe three main components of the Segment Anything Model. Credits: From {%cite seb-10aipapers2023%} 
+
 ## Reading List
 
 | Title                                          |  Topic       |   Comments                                                   |

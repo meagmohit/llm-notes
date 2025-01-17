@@ -122,6 +122,17 @@ Infers common-sense information and cognitive understanding given a visual input
 * **Masked Region Classification** predicts the object class for each masked region.  
 * **Masked Region Feature Regression** learns to regress the masked image region to its visual features.
 
+## RLHF Datasets
+
+* Anthropic RLHF Dataset on HuggingFace [[Dataset]](https://huggingface.co/datasets/Anthropic/hh-rlhf?row=98)
+* No Robots of 10k instructions from HuggingFace, based on SFT dataset from InstructGPT [[Dataset]](https://huggingface.co/datasets/HuggingFaceH4/no_robots)
+
+## 15K Token FineWeb Dataset
+
+{%cite penedo2024finewebdatasetsdecantingweb%} describes, creates and makes a 15T token dataset publicly available. Based on Chinchilla Scaling Laws, the 15T dataset should be optimal for 500B parameters. Note that, RedPajama contains 20 trillion tokens, but the researchers found that models trained on RedPajama result in poorer quality than FineWeb due to the different filtering rules applied. The Llama 3 models with 8B, 70B, and 405B sizes were trained on 15 trillion tokens as well, but Meta AI's training dataset is not publicly available. 
+
+
+
 ## References
 
 {% bibliography --cited %}
