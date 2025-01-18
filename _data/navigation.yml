@@ -1,7 +1,7 @@
 # main links
 main:
-  # - title: "Home"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About"
+    url: https://agmohit.com/index.html
   
 docs:
   - title: Core
@@ -9,17 +9,17 @@ docs:
       - title: "Transformers"
         url: /docs/transformers/
       - title: "Positional Encodings"
-        url: /docs/positional-encodings
+        url: /docs/positional-encodings/
       - title: "Tokenization"
-        url: /docs/tokenization
+        url: /docs/tokenization/
       # - title: "Decoding Strategies"
       #   url: /docs/decoding-strategies
       - title: "KV Cache"
-        url: /docs/kv-cache
+        url: /docs/kv-cache/
       - title: "Vision Transformers"
-        url: /docs/vision-transformers
+        url: /docs/vision-transformers/
       - title: "Advances in Transformers"
-        url: /docs/advances-in-transformers
+        url: /docs/advances-in-transformers/
       # - title: "Diffusion"
       #   url: /docs/diffusion
   - title: Models & Architectures
@@ -33,7 +33,7 @@ docs:
   - title: Training
     children:
       - title: "Training Overview"
-        url: /docs/training-overview/
+        url: /docs/training-overview
       # - title: "Pre-Training"
       #   url: /docs/pre-training/
       # - title: "SFT"
@@ -43,7 +43,7 @@ docs:
       - title: "PET Methods"
         url: /docs/pet-methods/
       - title: "Scaling Laws"
-        url: /docs/scaling-laws
+        url: /docs/scaling-laws/
       - title: "Emerging Methods"
         url: /docs/emerging-methods/
   - title: Evaluation

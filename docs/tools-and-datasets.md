@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Tools & Datasets
-permalink: /docs/tools-and-datasets
+permalink: /docs/tools-and-datasets/
 toc: true
 ---
 

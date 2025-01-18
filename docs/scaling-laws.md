@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Scaling Laws
-permalink: /docs/scaling-laws
+permalink: /docs/scaling-laws/
 toc: true
 ---
 

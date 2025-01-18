@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Vision Transformers
-permalink: /docs/vision-transformers
+permalink: /docs/vision-transformers/
 toc: true
 ---
 

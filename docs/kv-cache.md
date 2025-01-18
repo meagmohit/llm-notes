@@ -1,7 +1,7 @@
 ---
 layout: single
 title: KV-Cache
-permalink: /docs/kv-cache
+permalink: /docs/kv-cache/
 toc: true
 ---
 

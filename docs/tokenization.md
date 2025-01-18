@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Tokenization
-permalink: /docs/tokenization
+permalink: /docs/tokenization/
 toc: true
 ---
 

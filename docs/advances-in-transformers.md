@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Advances in Transformers
-permalink: /docs/advances-in-transformers
+permalink: /docs/advances-in-transformers/
 toc: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Training Overview
-permalink: /docs/training-overview
+permalink: /docs/training-overview/
 toc: true
 ---
 

@@ -20,8 +20,8 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "LM Notes"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "LM Notes name"
-description              : "An amazing website."
+name                     : "LM Notes"
+description              : "Large Models Refresher"
 url                      : http://meagmohit.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/llm-notes" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -30,7 +30,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
-enable_copy_code_button  : # true, false (default)
+enable_copy_code_button  : true # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
@@ -105,9 +105,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-LLTQS4PYNJ"
     anonymize_ip         : # true, false (default)
 
 
@@ -139,17 +139,20 @@ analytics:
 #       # url: "https://instagram.com/"
 
 # # Site Footer
-# footer:
-#   links:
-#     - label: "Twitter"
-#       icon: "fab fa-fw fa-twitter-square"
-#       # url:
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/meagmohit"
 #     - label: "Facebook"
 #       icon: "fab fa-fw fa-facebook-square"
 #       # url:
-#     - label: "GitHub"
-#       icon: "fab fa-fw fa-github"
-#       # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/meagmohit"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/meagmohit"
 #     - label: "GitLab"
 #       icon: "fab fa-fw fa-gitlab"
 #       # url:

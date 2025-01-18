@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Positional Encodings
-permalink: /docs/positional-encodings
+permalink: /docs/positional-encodings/
 toc: true
 ---
 

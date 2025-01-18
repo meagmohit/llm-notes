@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Alignment/RLHF
-permalink: /docs/alignment-rlhf
+permalink: /docs/alignment-rlhf/
 toc: true
 ---
 

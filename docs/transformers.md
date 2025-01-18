@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Transformers
-permalink: /docs/transformers
+permalink: /docs/transformers/
 toc: true
 ---
 
