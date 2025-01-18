@@ -2,6 +2,7 @@
 layout: single
 title: Scaling Laws
 permalink: /docs/scaling-laws/
+last_modified_at: 2025-01-17T17:00:00-08:00s
 toc: true
 ---
 
@@ -101,13 +102,13 @@ predicted curve. For this figure, we exclude embedding parameters from compute a
 
 
 
-## Reading List
+<!-- ## Reading List
 
 
 | Title                                          |  Topic       |   Comments                                                   |
 | --------------------------------------------   | ------------ | ------------------------------------------------------------ |
 | [The Scaling Hypothesis](https://gwern.net/scaling-hypothesis) {% cite gwern-scaling%}| Scaling Laws | Great discussion and overview, and thought provoking (Long Read)
-| [Scaling Laws in Large Language Models](https://hackernoon.com/scaling-laws-in-large-language-models) {% cite hackernoon-scaling%}| Scaling Laws | Great Quick Overview
+| [Scaling Laws in Large Language Models](https://hackernoon.com/scaling-laws-in-large-language-models) {% cite hackernoon-scaling%}| Scaling Laws | Great Quick Overview -->
 
 ## References
 

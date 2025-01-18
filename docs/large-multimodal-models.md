@@ -2,6 +2,7 @@
 layout: single
 title: Large Multimodal Models (LLMs)
 permalink: /docs/large-multimodal-models/
+last_modified_at: 2025-01-17T17:00:00-08:00s
 toc: true
 ---
 
@@ -261,13 +262,13 @@ evaluation or end-to-end finetuning. Credits: {%cite yu2022cocacontrastivecaptio
 ![Segment Anything Model]({{ site.url }}{{ site.baseurl }}/docs/images/lmm-segment-anything.jpg)
 Fig. AThe three main components of the Segment Anything Model. Credits: From {%cite seb-10aipapers2023%} 
 
-## Reading List
+<!-- ## Reading List
 
 | Title                                          |  Topic       |   Comments                                                   |
 | --------------------------------------------   | ------------ | ------------------------------------------------------------ |
 | [Multimodality and Large Multimodal Models (LMMs) by Chip Huyen](https://huyenchip.com/2023/10/10/multimodal.html) {% cite chip-multimodal%}| MMs | Great review of MMs, with CLIP , FLAMINGO and insights
 | [Generalized Visual Language Models by Lilian Weng](https://lilianweng.github.io/posts/2022-06-09-vlm/) {% cite weng2022vlm%}| MMs | Great overview of VLM techniques
-| [Primers - Vision Language Models](https://aman.ai/primers/ai/vision-language-models/) {% cite Chadha2020DistilledVisionLanguageModels%}| MMs | Average Read
+| [Primers - Vision Language Models](https://aman.ai/primers/ai/vision-language-models/) {% cite Chadha2020DistilledVisionLanguageModels%}| MMs | Average Read -->
 
 ## References
 

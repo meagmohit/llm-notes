@@ -2,6 +2,7 @@
 layout: single
 title: Transformers
 permalink: /docs/transformers/
+last_modified_at: 2025-01-17T17:00:00-08:00s
 toc: true
 ---
 
@@ -160,7 +161,7 @@ The model is fed with the ground truth (True) target sequence at each time step 
 * Implemented using the KL divergence loss. Instead of using a one-hot target distribution, we create a distribution that has a reasonably high confidence of the correct word and the rest of the smoothing mass distributed throughout the vocabulary.
 
 
-## Reading List
+<!-- ## Reading List
 
 
 | Title                                          |  Topic       |   Comments                                                   |
@@ -170,7 +171,7 @@ The model is fed with the ground truth (True) target sequence at each time step 
 | [Attention in transformers, visually explained by 3Blue1Brown](https://www.youtube.com/watch?v=eMlx5fFNoYc&ab_channel=3Blue1Brown) {% cite 3b1b-transformers%}| Transformers | Great Visuals and Explanation
 | [Some Intuition on Attention and the Transformer by Eugene Yan](https://eugeneyan.com/writing/attention/) {% cite yan2023attention%}| Transformers | Great Visuals and Explanation
 | [The Transformer Family by Lilian Weng](https://lilianweng.github.io/posts/2020-04-07-the-transformer-family/) {% cite weng2020transformer%}| Advances in Transformers | Advanced transformer post-enhancements 
-| [The Transformer Family 2.0 by Lilian Weng](https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/) {% cite weng2023transformer%}| Advances in Transformers | Update to {% cite weng2020transformer%} the transformer family. Adds a lot of other updates on the transformers, however, some modules (which were not covered in {% cite weng2020transformer%} since it’s very detailed and niche. 
+| [The Transformer Family 2.0 by Lilian Weng](https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/) {% cite weng2023transformer%}| Advances in Transformers | Update to {% cite weng2020transformer%} the transformer family. Adds a lot of other updates on the transformers, however, some modules (which were not covered in {% cite weng2020transformer%} since it’s very detailed and niche.  -->
 
 ## References
 

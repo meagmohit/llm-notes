@@ -2,6 +2,7 @@
 layout: single
 title: Advances in Transformers
 permalink: /docs/advances-in-transformers/
+last_modified_at: 2025-01-17T17:00:00-08:00
 toc: true
 ---
 

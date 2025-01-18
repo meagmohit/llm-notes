@@ -2,6 +2,7 @@
 layout: single
 title: Parameter Efficient Tuning (PET) Methods
 permalink: /docs/pet-methods/
+last_modified_at: 2025-01-17T17:00:00-08:00s
 toc: true
 ---
 
@@ -45,7 +46,7 @@ A two-step approach gives DoRA more flexibility than standard LoRA. Rather than 
 
 
 
-## Reading List
+<!-- ## Reading List
 
 
 | Title                                          |  Topic       |   Comments                                                   |
@@ -53,10 +54,13 @@ A two-step approach gives DoRA more flexibility than standard LoRA. Rather than 
 | [Practical Tips for Finetuning LLMs Using LoRA (Low-Rank Adaptation)](https://magazine.sebastianraschka.com/p/practical-tips-for-finetuning-llms) {% cite seb-finetuning-llms%}| PET Methods| Good overview of LoRA and practical tips for using it
 | [Noteworthy AI Research Papers of 2024 (Part One)](https://magazine.sebastianraschka.com/p/ai-research-papers-2024-part-1) {% cite seb-aipapers-2024-part1%}| PET Methods| 6 Research Papers of 2024-H1
 | [Improving LoRA: Implementing Weight-Decomposed Low-Rank Adaptation (DoRA) from Scratch](https://magazine.sebastianraschka.com/p/lora-and-dora-from-scratch) {% cite seb-improving-lora%}| PET Methods| DoRA overview in-depth
-| [Finetuning LLMs with LoRA and QLoRA: Insights from Hundreds of Experiments](https://lightning.ai/pages/community/lora-insights/) {% cite seb-finetuning-llm-lightningAI%}| PET Methods| Deep-dive of {% cite seb-finetuning-llms%}
+| [Finetuning LLMs with LoRA and QLoRA: Insights from Hundreds of Experiments](https://lightning.ai/pages/community/lora-insights/) {% cite seb-finetuning-llm-lightningAI%}| PET Methods| Deep-dive of {% cite seb-finetuning-llms%} -->
 
 
+## References
 
+
+{% bibliography --cited %}
 
 
 

@@ -60,6 +60,12 @@ docs:
   #       url: /docs/rag/
   #     - title: "Agents"
   #       url: /docs/agents/
+  - title: Reading List
+    url: /docs/reading-list/
+    # children:
+    #   - title: "Evaluation Overview"
+    #     url: /docs/evaluation-overview/
+
 
 
 

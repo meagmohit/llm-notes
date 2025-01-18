@@ -2,6 +2,7 @@
 layout: single
 title: Large Language Models (LLMs)
 permalink: /docs/large-language-models/
+last_modified_at: 2025-01-17T17:00:00-08:00s
 toc: true
 ---
 
@@ -260,7 +261,7 @@ Fig. An overview of knowledge distillation, where a small model (here, the AFM-d
 Gemma 2 is likely the most capable model for single-GPU use cases today. For larger models, Llama 3 70B and Qwen 2 72B remain strong contenders {%cite seb-instruction-pretraining%}
 {: .notice--info}
 
-## Reading List
+<!-- ## Reading List
 
 
 | Title                                          |  Topic       |   Comments                                                   |
@@ -269,7 +270,7 @@ Gemma 2 is likely the most capable model for single-GPU use cases today. For lar
 | [Generalized Language Models by Lilian Weng](https://lilianweng.github.io/posts/2019-01-31-lm/) {% cite weng2019LM%}| LMs | Great overview of BERT and its successors
 | [Ten Noteworthy AI Research Papers of 2023 by Sebastian Raschka](https://magazine.sebastianraschka.com/p/10-ai-research-papers-2023) {% cite seb-10aipapers2023%}| LMs/Research | Decent samplers of 2023 10 papers
 | [AI and Open Source in 2023](https://magazine.sebastianraschka.com/p/ai-and-open-source-in-2023) {% cite seb-ai-opensource%}| LMs/Research | Decent samplers of 2023 10 papers
-| [New LLM Pre-training and Post-training Paradigms](https://magazine.sebastianraschka.com/p/new-llm-pre-training-and-post-training) {% cite seb-new-llm-pretraining-posttraining%}| LMs/Training/Research | detailed overview of pre-training pipelines
+| [New LLM Pre-training and Post-training Paradigms](https://magazine.sebastianraschka.com/p/new-llm-pre-training-and-post-training) {% cite seb-new-llm-pretraining-posttraining%}| LMs/Training/Research | detailed overview of pre-training pipelines -->
 
 
 ## References

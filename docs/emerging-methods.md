@@ -2,6 +2,7 @@
 layout: single
 title: Emerging Methods
 permalink: /docs/emerging-methods/
+last_modified_at: 2025-01-17T17:00:00-08:00s
 toc: true
 ---
 
@@ -109,43 +110,12 @@ However, the smaller models must share the same vocabulary as the larger target 
 
 
 
-@misc{liu2024tuninglanguagemodelsproxy,
-      title={Tuning Language Models by Proxy}, 
-      author={Alisa Liu and Xiaochuang Han and Yizhong Wang and Yulia Tsvetkov and Yejin Choi and Noah A. Smith},
-      year={2024},
-      eprint={2401.08565},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2401.08565}, 
-}
-
-@misc{fedus2022switchtransformersscalingtrillion,
-      title={Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity}, 
-      author={William Fedus and Barret Zoph and Noam Shazeer},
-      year={2022},
-      eprint={2101.03961},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2101.03961}, 
-}
-
-@misc{jiang2024mixtralexperts,
-      title={Mixtral of Experts}, 
-      author={Albert Q. Jiang and Alexandre Sablayrolles and Antoine Roux and Arthur Mensch and Blanche Savary and Chris Bamford and Devendra Singh Chaplot and Diego de las Casas and Emma Bou Hanna and Florian Bressand and Gianna Lengyel and Guillaume Bour and Guillaume Lample and Lélio Renard Lavaud and Lucile Saulnier and Marie-Anne Lachaux and Pierre Stock and Sandeep Subramanian and Sophia Yang and Szymon Antoniak and Teven Le Scao and Théophile Gervet and Thibaut Lavril and Thomas Wang and Timothée Lacroix and William El Sayed},
-      year={2024},
-      eprint={2401.04088},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2401.04088}, 
-}
-
-
-## Reading List
+<!-- ## Reading List
 
 
 | Title                                          |  Topic       |   Comments                                                   |
 | --------------------------------------------   | ------------ | ------------------------------------------------------------ |
-| [Model Merging, Mixtures of Experts, and Towards Smaller LLMs](https://magazine.sebastianraschka.com/p/research-papers-in-january-2024) {% cite seb-aipapers-2023%}| MoE/Merging | 
+| [Model Merging, Mixtures of Experts, and Towards Smaller LLMs](https://magazine.sebastianraschka.com/p/research-papers-in-january-2024) {% cite seb-aipapers-2023%}| MoE/Merging |  -->
 
 
 ## References

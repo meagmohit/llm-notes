@@ -2,6 +2,7 @@
 layout: single
 title: Training Overview
 permalink: /docs/training-overview/
+last_modified_at: 2025-01-17T17:00:00-08:00s
 toc: true
 ---
 
@@ -72,7 +73,7 @@ MagPie {%cite xu2024magpiealignmentdatasynthesis%} proposed a hack to generate h
 
 
 
-## Reading List
+<!-- ## Reading List
 
 
 | Title                                          |  Topic       |   Comments                                                   |
@@ -83,7 +84,7 @@ MagPie {%cite xu2024magpiealignmentdatasynthesis%} proposed a hack to generate h
 | [Predictive Human Preference: From Model Ranking to Model Routing](https://huyenchip.com/2024/02/28/predictive-human-preference.html) {% cite chip-human-preference%}| Training | Basics of Model evaluation, routing and ranking. Other items like predictive human preference experiments can be ignored.
 | [Aligning language models to follow instructions by OpenAI](https://openai.com/index/instruction-following/) {% cite openai-instruction-following%}| Training | 
 | [Reinforcement Learning for Language Models](https://gist.github.com/yoavg/6bff0fecd65950898eba1bb321cfbd81) {% cite yoavg-rl-llm%}| Training | 
-| [Instruction Pretraining LLMs](https://magazine.sebastianraschka.com/p/instruction-pretraining-llms) {% cite seb-instruction-pretraining%}| Training | 
+| [Instruction Pretraining LLMs](https://magazine.sebastianraschka.com/p/instruction-pretraining-llms) {% cite seb-instruction-pretraining%}| Training |  -->
 
 ## References
 
